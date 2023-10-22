@@ -1,0 +1,38 @@
+.footer {
+    padding:3rem 2rem;
+    border-radius:0px 100px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+
+    text-align: center;
+
+    
+    background: var(--very-dark-black-blue);
+}
+
+
+.footer-nav-container {
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.footer-nav-heading {
+    color:var(--white);
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+
+    color:var(--grayish-blue);
+}
+
+
+
