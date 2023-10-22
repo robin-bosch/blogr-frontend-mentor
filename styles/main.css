@@ -64,6 +64,12 @@ p {
     width:100%;
 }
 
+.header-background-wrapper {
+    border-radius:0px 0px 0px 100px;
+    background: var(--very-light-red);
+    background: linear-gradient(129deg, var(--very-light-red-gradient), var(--light-red-gradient));
+}
+
 .logo {
     font-family: "Overpass";
     font-weight: 600;
@@ -77,12 +83,11 @@ p {
     display:flex;
     flex-direction: column;
     align-items: center;
-    border-radius:0px 0px 0px 100px;
+    
 
     text-align: center;
 
     color:var(--white);
-    background-color: var(--very-light-red);
 }
 
 .intro-heading {
@@ -190,7 +195,6 @@ p {
     font-weight: 600;
     padding:0.5rem;
     border-radius:500px;
-    background:none;
     transition: 0.3s;
 }
 

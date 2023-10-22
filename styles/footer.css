@@ -35,4 +35,21 @@
 }
 
 
+@media (min-width: 1024px) { 
+    .footer {
+        padding:4rem 10vw;
+        gap:15vw;
+        flex-direction: row;
+        align-items: start;
+        text-align: left;
+        /* justify-content: center; */
+    }
+
+    .footer-nav {
+        align-items: start;
+    }
+    
+}
+
+
 

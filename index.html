@@ -9,78 +9,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="desktop-header">
-        <div>
+    <div class="header-background-wrapper">
+        <header class="desktop-header">
+            <div class="desktop-header-left">
+                <div class="logo">Blogr</div>
+                <div class="desktop-header-nav-container">
+                    <div class="desktop-header-nav-section">
+                        <p class="desktop-header-nav-heading">
+                            <span>Product</span>
+                            <i class="fa-solid fa-chevron-down desktop-header-nav-arrow"></i>
+                        </p>
+                        <nav class="desktop-header-nav">
+                            <a href="">Overview</a>
+                            <a href="">Pricing</a>
+                            <a href="">Marketplace</a>
+                            <a href="">Features</a>
+                            <a href="">Integrations</a>
+                        </nav>
+                    </div>
+                    <div class="desktop-header-nav-section">
+                        <p class="desktop-header-nav-heading">
+                            <span>Company</span>
+                            <i class="fa-solid fa-chevron-down desktop-header-nav-arrow"></i>
+                        </p>
+                        <nav class="desktop-header-nav">
+                            <a href="">About</a>
+                            <a href="">Team</a>
+                            <a href="">Blog</a>
+                            <a href="">Careers</a>
+                        </nav>
+                    </div>
+                    <div class="desktop-header-nav-section">
+                        <p class="desktop-header-nav-heading">
+                            <span>Contact</span>
+                            <i class="fa-solid fa-chevron-down desktop-header-nav-arrow"></i>
+                        </p>
+                        <nav class="desktop-header-nav">
+                            <a href="">Contact</a>
+                            <a href="">Newsletter</a>
+                            <a href="">LinkedIn</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-header-right">
+                <h3>Login</h3>
+                <div class="btn desktop-header-btn">Sign up</div>
+            </div>
+        </header>
+        <header class="mobile-header">
             <div class="logo">Blogr</div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading">Product</p>
-                <nav>
-                    <a href="">Overview</a>
-                    <a href="">Pricing</a>
-                    <a href="">Marketplace</a>
-                    <a href="">Features</a>
-                    <a href="">Integrations</a>
-                </nav>
+            <div id="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading">Company</p>
-                <nav>
-                    <a href="">About</a>
-                    <a href="">Team</a>
-                    <a href="">Blog</a>
-                    <a href="">Careers</a>
-                </nav>
-            </div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading"></p>
-                <nav>
-                    <a href="">Contact</a>
-                    <a href="">Newsletter</a>
-                    <a href="">LinkedIn</a>
-                </nav>
-            </div>
-        </div>
-        <div>
-            <div>Login</div>
-            <div class="btn btn-white">Sign up</div>
-        </div>
-    </header>
-    <header class="mobile-header">
-        <div class="logo">Blogr</div>
-        <div>My burger button</div>
-        <div class="mobile-menu">
-            <div class="logo">Blogr</div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading">Product</p>
-                <nav>
-                    <a href="">Overview</a>
-                    <a href="">Pricing</a>
-                    <a href="">Marketplace</a>
-                    <a href="">Features</a>
-                    <a href="">Integrations</a>
-                </nav>
-            </div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading">Company</p>
-                <nav>
-                    <a href="">About</a>
-                    <a href="">Team</a>
-                    <a href="">Blog</a>
-                    <a href="">Careers</a>
-                </nav>
-            </div>
-            <div class="footer-nav-container">
-                <p class="footer-nav-heading"></p>
-                <nav>
-                    <a href="">Contact</a>
-                    <a href="">Newsletter</a>
-                    <a href="">LinkedIn</a>
-                </nav>
-            </div>
+            <div id="mobile-menu">
+                <div class="mobile-header-nav-container">
+                    <div class="mobile-header-nav-section">
+                        <h3 class="mobile-header-nav-heading">
+                            <span>Product</span>
+                            <i class="fa-solid fa-chevron-down mobile-header-nav-arrow"></i>
+                        </h3>
+                        <nav class="mobile-header-nav">
+                            <a href="">Overview</a>
+                            <a href="">Pricing</a>
+                            <a href="">Marketplace</a>
+                            <a href="">Features</a>
+                            <a href="">Integrations</a>
+                        </nav>
+                    </div>
+                    <div class="mobile-header-nav-section">
+                        <h3 class="mobile-header-nav-heading">
+                            <span>Company</span>
+                            <i class="fa-solid fa-chevron-down mobile-header-nav-arrow"></i>
+                        </h3>
+                        <nav class="mobile-header-nav">
+                            <a href="">About</a>
+                            <a href="">Team</a>
+                            <a href="">Blog</a>
+                            <a href="">Careers</a>
+                        </nav>
+                    </div>
+                    <div class="mobile-header-nav-section">
+                        <h3 class="mobile-header-nav-heading">
+                            <span>Contact</span>
+                            <i class="fa-solid fa-chevron-down mobile-header-nav-arrow"></i>
+                        </h3>
+                        <nav class="mobile-header-nav">
+                            <a href="">Contact</a>
+                            <a href="">Newsletter</a>
+                            <a href="">LinkedIn</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn-container">
+                    <h3>Login</h3>
+                    <div class="btn mobile-header-btn">Sign up</div>
+                </div>
+                
 
-        </div>
-    </header>
-    <main>
+
+    
+            </div>
+        </header>
         <section class="intro-section">
             <h2 class="intro-heading text-white">A modern publishing platform</h2>
             <p class="intro-text text-white">Grow your audience nad build your online brand</p>
@@ -89,6 +121,10 @@
                 <div class="btn">Learn more</div>
             </div>
         </section>
+    </div>
+    
+    <main>
+        
         <section class="feature-section">
             <h3>Designed for the future</h3>
             <div>
@@ -163,6 +199,33 @@
             </nav>
         </div>
     </footer>
+
+    <script>
+        document.querySelector("#burger-btn").addEventListener("click", function() {
+            document.querySelector("#mobile-menu").classList.toggle("open");
+            document.querySelector("#burger-btn").classList.toggle("open");
+        })
+
+
+        document.querySelectorAll(".mobile-header-nav-heading").forEach((nav, index) => {
+            nav.addEventListener("click", function() {
+
+                this.classList.toggle("open");
+                let navBody = this.nextElementSibling;
+
+                if (navBody.style.maxHeight) {
+                    navBody.style.padding = null;
+                    navBody.style.maxHeight = null;
+                    
+                }
+                else {
+                    navBody.style.padding = "1.5rem";
+                    navBody.style.maxHeight = `calc(${navBody.scrollHeight}px + (2*${navBody.style.padding}))`;
+                    
+                }
+            });
+        })
+    </script>
 
 </body>
 </html>
