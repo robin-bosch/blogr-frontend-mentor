@@ -9,10 +9,8 @@
 
     text-align: center;
 
-    
     background: var(--very-dark-black-blue);
 }
-
 
 .footer-nav-container {
     display: flex;
@@ -34,15 +32,15 @@
     color:var(--grayish-blue);
 }
 
-
 @media (min-width: 1024px) { 
     .footer {
         padding:4rem 10vw;
-        gap:15vw;
+        
         flex-direction: row;
         align-items: start;
+        gap:15vw;
+
         text-align: left;
-        /* justify-content: center; */
     }
 
     .footer-nav {

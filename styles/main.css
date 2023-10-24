@@ -39,12 +39,15 @@
     --very-dark-desaturated-blue-gradient: hsl(237, 23%, 32%);
 }
 
+/*
+#
+# General styles
+#
+*/
 body {
     font-family: "Ubuntu";
     font-size: 16px;
     overflow-x: hidden;
-
-
 }
 
 h1, h2, h3, h4 {
@@ -80,14 +83,21 @@ p {
     width:100%;
 }
 
-/* 
-    Buttons
-*/
-.btn {
+.logo {
     font-family: "Overpass";
+    font-size:2.5rem;
     font-weight: 600;
-    padding:0.5rem;
+    letter-spacing: -0.1rem;
+    color: var(--white);
+}
+
+/* Basic button design */
+.btn {
     border-radius:500px;
+
+    font-family: "Ubuntu";
+    font-weight: 700;
+    
     transition: 0.3s;
 }
 
@@ -96,40 +106,38 @@ p {
     transition: 0.3s;
 }
 
-
+/*
+#
+# Sections
+#
+*/
 .header-background-wrapper {
+    height:80vh;
+    border-radius:0px 0px 0px 100px;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 80%;
-    height:80vh;
-    border-radius:0px 0px 0px 100px;
-    /* background: var(--very-light-red); */
+
     background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(130deg, var(--very-light-red-gradient) 20%, var(--light-red-gradient));
-    background-size: 350%;
+    background-size: 350%, cover;
     background-repeat: no-repeat;
-    background-position: 40% 10%;
+    background-position: 40% 10%, center;
 }
 
-.logo {
-    font-family: "Overpass";
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    font-size:2.5rem;
-    color: var(--white);
-}
-
+/* Intro section */
 .intro-section {
     max-height:100%;
     padding:5rem 2rem;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:0.5rem;
+
     font-family: "Overpass";
-
     text-align: center;
-
     color:var(--white);
 }
 
@@ -145,9 +153,11 @@ p {
 
 .intro-btn-container {
     padding:2rem 1rem;
+
     display:flex;
-    gap:1rem;
     justify-content: center;
+    gap:1rem;
+    
 }
 
 .intro-btn-white {
@@ -166,6 +176,7 @@ p {
 /* Features section */
 .feature-section {
     padding:5rem 2rem;
+
     display: grid;
     grid-template-columns: 1fr;
     gap:2rem;
@@ -173,18 +184,18 @@ p {
     text-align: center;
 }
 
-.feature-image {
-    display: flex;
-    justify-content: center;
-    width:100%;
-}
-
-.feature-image .illustration-mobile {
-    width:clamp(5rem, 100%, 30rem);
-}
-
 .feature-section-heading {
     font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.feature-image-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image-container .illustration-mobile {
+    width:clamp(5rem, 100%, 30rem);
 }
 
 .feature-container {
@@ -206,12 +217,11 @@ p {
 }
 
 
-
-/* Infrastructure section */
+/* infrastructure section */
 .infrastructure-section {
     margin-top:clamp(5rem, 45vw, 10rem);
-    /* padding:5rem 2rem 6rem 2rem; */
     border-radius:0px 100px 0px 100px;
+
     position: relative;
 
     display: grid;
@@ -219,13 +229,10 @@ p {
 
     text-align: center;
 
-    /* background-color: var(--very-dark-gray-blue-gradient); */
     background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, var(--very-dark-gray-blue-gradient), var(--very-dark-desaturated-blue-gradient));
     background-size: 150vw auto, cover;
     background-repeat: no-repeat;
     background-position: center top -50vw, center;
-    
-
 }
 
 .infrastructure-image {
@@ -236,17 +243,15 @@ p {
     right:0;
     top:0;
     transform: translateY(-45%);
-
 }
 
 .infrastructure-text-container {
     margin-top:clamp(3rem, 30%, 10rem);
+    padding:5rem 2rem 6rem 2rem;
+
     display:flex;
     flex-direction: column;
-    padding:5rem 2rem 6rem 2rem;
 }
-
-
 
 /* developer section */
 .developer-section {
@@ -275,13 +280,20 @@ p {
     font-size:1.25rem;
 }
 
-
-
-
-
-
-
+/*
+#
+# Media queries
+#
+*/
 @media (min-width: 1024px) { 
+    .illustration-desktop {
+        display: block;
+    }
+
+    .illustration-mobile {
+        display: none;
+    }
+
     .header-background-wrapper {
         height:40vw;
         background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, var(--very-light-red-gradient) 20%, var(--light-red-gradient));
@@ -289,20 +301,10 @@ p {
         background-position: 50% 10%;
     }
 
-    .illustration-desktop {
-        display: block;
-        
-    }
-
-    .illustration-mobile {
-        display: none;
-    }
-
-
+    /* feature section */
     .feature-section {
         padding:10rem;
         gap:7rem;
-    
     }
 
     .feature-container {
@@ -310,29 +312,29 @@ p {
         text-align: left;
     }
 
+    .feature-image-container {
+        position: relative;
+    }
+
     .feature-text-container {
         order:-1;
         gap:5rem;
     }
+
+    /* Needed ? */
     .features-section, .developer-section, .infrastructure-section {
         flex-direction: row;
     }
 
-    .feature-image {
-        position: relative;
-        
-    }
-
     .feature-image .illustration-desktop {
-        position:absolute;
-        transform: translateY(-25%) translateX(25%);
-        /* right:clamp(-20rem, -45vw, -5rem); */
         width: clamp(5rem, 55vw, 50rem);
         max-width:none;
-        /* height: */
+
+        position:absolute;
+        transform: translateY(-25%) translateX(25%);
     }
 
-
+    /* infrastructur section */
     .infrastructure-section {
         margin-top:10rem;
         grid-template-columns: 1fr 1fr;
@@ -342,22 +344,23 @@ p {
     }
 
     .infrastructure-image-container {
-        position: relative;
-        height:100%;
         width:100%;
+        height:100%;
+
+        position: relative;
     }
 
     .infrastructure-image {
-        position: absolute;
+        width:auto;
+        max-height:150%;
         margin:0 auto;
         left:0;
         right:0;
         top:0;
+
+        position: absolute;
+        
         transform: translateY(-10%);
-        /* max-width:none; */
-        max-height:150%;
-        width:auto;
-    
     }
     
     .infrastructure-text-container {
@@ -366,10 +369,10 @@ p {
         text-align: left;
     }
 
+    /* developer section */
     .developer-section {
-        grid-template-columns: 1fr 1fr;
         padding:20rem 15rem;
-        /* gap:7rem; */
+        grid-template-columns: 1fr 1fr;
     
         text-align: left;
     }
@@ -379,18 +382,11 @@ p {
     }
 
     .developer-image-container .illustration-desktop {
-        position:absolute;
-        transform: translateY(-25%) translateX(-50%);
-        /* right:clamp(-20rem, -45vw, -5rem); */
         width: clamp(5rem, 55vw, 50rem);
         max-width:none;
-        /* height: */
-    }
- }
 
- @media (min-width: 1280px) { 
-    .feature-image .illustration-desktop {
-        /* top:clamp(-5rem, -40vw, -2.5rem); */
+        position:absolute;
 
+        transform: translateY(-25%) translateX(-50%);
     }
- }
+}
