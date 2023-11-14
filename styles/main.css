@@ -166,11 +166,21 @@ p {
     color: var(--very-light-red);
 }
 
+.intro-btn-white:hover {
+    color: var(--white);
+    background: var(--very-light-red);
+}
+
 .intro-btn-red {
     padding:0.75rem 1rem;
     background: transparent;
     color: var(--white);
     border:1px solid var(--white);
+}
+
+.intro-btn-red:hover {
+    color:var(--very-light-red);
+    background: var(--white);
 }
 
 /* Features section */
@@ -188,15 +198,17 @@ p {
     font-size: clamp(1.7rem, 3vw, 2.3rem);
 }
 
-.feature-image-container {
+.feature-image-container, .developer-image-container {
     width:100%;
     display: flex;
     justify-content: center;
 }
 
-.feature-image-container .illustration-mobile {
+.feature-image-container .illustration-mobile  {
     width:clamp(5rem, 100%, 30rem);
 }
+
+
 
 .feature-container {
     display: grid;
@@ -207,6 +219,7 @@ p {
 .feature-text-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap:3rem;
 }
 
@@ -219,7 +232,7 @@ p {
 
 /* infrastructure section */
 .infrastructure-section {
-    margin-top:clamp(5rem, 45vw, 10rem);
+    margin-top:min(40vw, 12rem);
     border-radius:0px 100px 0px 100px;
 
     position: relative;
@@ -264,6 +277,10 @@ p {
     text-align: center;
 }
 
+.developer-image-container .illustration-mobile {
+    width:clamp(5rem, 100%, 40rem);
+}
+
 .developer-text-container {
     display: flex;
     flex-direction: column;
@@ -285,7 +302,7 @@ p {
 # Media queries
 #
 */
-@media (min-width: 1024px) { 
+@media (min-width: 1280px) { 
     .illustration-desktop {
         display: block;
     }
@@ -298,7 +315,7 @@ p {
         height:40vw;
         background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, var(--very-light-red-gradient) 20%, var(--light-red-gradient));
         background-size: 150%;
-        background-position: 50% 10%;
+        background-position: 35% 50%;
     }
 
     /* feature section */
@@ -326,7 +343,7 @@ p {
         flex-direction: row;
     }
 
-    .feature-image .illustration-desktop {
+    .feature-image-container .illustration-desktop {
         width: clamp(5rem, 55vw, 50rem);
         max-width:none;
 
@@ -382,11 +399,16 @@ p {
     }
 
     .developer-image-container .illustration-desktop {
-        width: clamp(5rem, 55vw, 50rem);
+        width: clamp(5rem, 200%, 55rem);
         max-width:none;
 
         position:absolute;
 
-        transform: translateY(-25%) translateX(-50%);
+        transform: translateY(-25%) translateX(-35%);
     }
+}
+
+@media (min-width: 1280px) { 
+
+
 }

@@ -32,6 +32,10 @@
     color:var(--grayish-blue);
 }
 
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 1024px) { 
     .footer {
         padding:4rem 10vw;

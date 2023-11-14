@@ -201,7 +201,7 @@
     }
 
     .desktop-header-nav-arrow {
-        font-size:1rem;
+        font-size:0.75rem;
         line-height:1.5; /* overriding font awesome css */
         transition: 0.3s;
     }
@@ -257,6 +257,11 @@
         padding:0.75rem 2.5rem;
         color: var(--light-red);
         background: var(--white);
+    }
+
+    .btn.desktop-header-btn:hover {
+        color: var(--white);
+        background: var(--very-light-red);
     }
     
 
