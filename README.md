@@ -94,11 +94,11 @@ HTML validation was done with the [W3 HTML validator](https://validator.w3.org/n
 
 ### CSS Validation
 
-CSS validation was done with the [W3 CSS validator](https://jigsaw.w3.org/css-validator/) and came back with warnings regarding the variables which are currently not checked.
+CSS validation was done with the [W3 CSS validator](https://jigsaw.w3.org/css-validator/) and came back with warnings regarding the variables which are currently not checked errors from the fontawesome framework.
 
 ### Accessibility Testing
 
-Accessibility was checked with the browser extension of the [WAVE validator](https://wave.webaim.org/) and came back with contrast errors for the text which is given from the design and one label error for the email input which is not needed.
+Accessibility was checked with the browser extension of the [WAVE validator](https://wave.webaim.org/) and came back with contrast errors for the text which is given from the design.
 
 ### Device Testing
 
