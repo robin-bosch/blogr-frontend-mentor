@@ -17,7 +17,6 @@ Designed by Frontend Mentor
     - [What I learned](#what-i-learned)
 - [Technologies used](#technologies-used)
 - [Validation and Testing](#validation-and-testing)
-    -
 - [Author](#author)
 - [Credits](#author)
 - [Acknowledgments](#acknowledgments)
@@ -46,7 +45,7 @@ The following designs were given to build the project:
 <details>
 <summary>Hover states on desktop</summary>
 
-![](docs/desktop-active-states.jpg)
+![](docs/active-states.jpg)
 </details>
 
 <details>
@@ -58,7 +57,7 @@ The following designs were given to build the project:
 <details>
 <summary>Navigation menu on mobile</summary>
 
-![](docs/mobile-active-nav.jpg)
+![](docs/mobile-menu.jpg)
 </details>
 
 ## My process
